@@ -10,15 +10,11 @@ public class Main {
 			for (int i=0;i<11;i++) {
 				int multi = num * i;
 				System.out.println(num+" x "+ i + " = "+ multi);
-			
 			}
 		}else {
 			System.out.println("El valor agregado no esta entre los parametros establecidos anteriormente");
 		}
 		
-		
-		
-		//	System.out.println(num);
 
 	}
 
