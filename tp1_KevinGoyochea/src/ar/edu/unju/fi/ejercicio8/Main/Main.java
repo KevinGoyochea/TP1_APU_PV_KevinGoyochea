@@ -11,7 +11,5 @@ public class Main {
 		calc.calcularSumatoria();
 		CalculadoraEspecial calc2 = new CalculadoraEspecial(n);	
 		calc2.calcularProductoria();
-		
 	}
-
 }

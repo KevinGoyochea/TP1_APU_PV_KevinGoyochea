@@ -21,7 +21,7 @@ public class CalculadoraEspecial {
 		System.out.println("El resultado de la sumatoria es: "+r1);	
 	}
 	
-	//metodo que calcula proctoria
+	//metodo que calcula productoria
 	public void calcularProductoria() {
 		int r1 =1;
 		int r =1;
