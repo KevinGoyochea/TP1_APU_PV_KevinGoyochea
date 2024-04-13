@@ -3,16 +3,16 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
+		Scanner scanner = new Scanner(System.in);
 		
 		System.out.println("ingrese un numero entero");
-		int num = sc.nextInt();
-		if (( num % 2) == 0) {
-		num = num*3;	
-		System.out.println(num);
+		int numero = scanner.nextInt();
+		if (( numero % 2) == 0) {
+			numero = numero*3;	
+			System.out.println(numero);
 		} else {
-		num= num*2;	
-			System.out.println(num);
+			numero= numero*2;	
+			System.out.println(numero);
 		}
 		
 	}

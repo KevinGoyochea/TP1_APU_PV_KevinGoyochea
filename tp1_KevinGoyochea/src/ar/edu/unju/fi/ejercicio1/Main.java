@@ -8,20 +8,20 @@ public class Main {
 		Random random = new Random ();
 			
 		
-		int num1 = random.nextInt(20);
-		int num2 = random.nextInt(20);
-		int num3 = random.nextInt(20);
-		int num4 = random.nextInt(20);
-		int num5 = random.nextInt(20);
+		int numero1 = random.nextInt(20);
+		int numero2 = random.nextInt(20);
+		int numero3 = random.nextInt(20);
+		int numero4 = random.nextInt(20);
+		int numero5 = random.nextInt(20);
 		
-		int prom = (num1 + num2 + num3 + num4 + num5)/5;
+		int promedio = (numero1 + numero2 + numero3 + numero4 + numero5)/5;
 		
-		System.out.println(num1);
-		System.out.println(num2);
-		System.out.println(num3);
-		System.out.println(num4);
-		System.out.println(num5);
-		System.out.println("el promedio es: "+prom);
+		System.out.println(numero1);
+		System.out.println(numero2);
+		System.out.println(numero3);
+		System.out.println(numero4);
+		System.out.println(numero5);
+		System.out.println("El promedio es: "+promedio);
 	}
 
 }

@@ -3,21 +3,21 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-		Scanner sc = new Scanner (System.in);
-		int i, fact=1, num1 ;
+		Scanner scanner = new Scanner (System.in);
+		int i, factorial=1, numero1 ;
 		System.out.println("Ingrese el numero entero, entre el 0 y el 10, que desee calcular el factorial");
-		int num = sc.nextInt();
-		num1=num;
-		if (num>=0 && num<=10) {
-			System.out.println(num);
-			while (num!=0) {
-				fact=fact*num;
-				num=num-1;
+		int numero = scanner.nextInt();
+		numero1=numero;
+		if (numero>=0 && numero<=10) {
+			System.out.println(numero);
+			while (numero!=0) {
+				factorial=factorial*numero;
+				numero=numero-1;
 			}
 		}else {
 			System.out.println("el valor añadido no es valido, verifique los parametros establecidos");
 		}
-		System.out.println("El factorial de "+num1+" es: "+fact);
+		System.out.println("El factorial de "+numero1+" es: "+factorial);
 
 	}
 
