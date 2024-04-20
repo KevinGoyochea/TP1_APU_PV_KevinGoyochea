@@ -18,7 +18,7 @@ public class Main {
 		}
 	
 		for(int i=array.length -1 ;i>=0;i--) {
-			System.out.println("Nombre: "+array[i]+" Posicion: "+i);
+			System.out.println("Elemento en la Posicion: "+i+" = "+array[i]);
 		}
 	}
 

@@ -13,7 +13,7 @@ public class Main {
 			array[i]=scanner.nextInt();
 		}
 		for(int i = 0;i<array.length;i++) {
-			System.out.println("Valor "+array[i]+" Indice: "+i);
+			System.out.println("Valor en la posicion "+i+" = "+array[i]);
 		}	
 	}
 }

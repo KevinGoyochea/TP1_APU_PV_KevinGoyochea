@@ -17,9 +17,8 @@ public class Main {
 		}
 		
 		for(int i = 0;i<array.length;i++) {
-			System.out.println("Valor: "+array[i]);
 			suma=suma+array[i];
-			System.out.println(" Posicion: "+i+" Suma: "+suma);
+			System.out.println("Valor en la Posicion: "+i+" = "+array[i]+" Suma: "+suma);
 		}
 		
 	}
