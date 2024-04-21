@@ -18,9 +18,9 @@ public class Main {
 		DateTimeFormatter formatoFecha = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 		List<Jugador> jugadores = new ArrayList<>();
 		//PARA PROBAR SI FUNCIONA O NO
-		jugadores.add(new Jugador("lionel","Messi",  LocalDate.parse("24/06/1987", formatoFecha), "argentina", 1.69f, 79f, "delantero"));
-		jugadores.add(new Jugador("cristian","Alvares", LocalDate.parse("13/06/1993", formatoFecha), "chile", 1.72f, 70f, "delantero"));
-		jugadores.add(new Jugador("kevin","goyochea", LocalDate.parse("02/04/2001", formatoFecha), "argentina", 1.70f, 62f, "defensor"));
+		//jugadores.add(new Jugador("lionel","Messi",  LocalDate.parse("24/06/1987", formatoFecha), "argentina", 1.69f, 79f, "delantero"));
+		//jugadores.add(new Jugador("cristian","Alvares", LocalDate.parse("13/06/1993", formatoFecha), "chile", 1.72f, 70f, "delantero"));
+		//jugadores.add(new Jugador("kevin","goyochea", LocalDate.parse("02/04/2001", formatoFecha), "argentina", 1.70f, 62f, "defensor"));
 		
 		Scanner scanner=new Scanner(System.in);
 		
@@ -45,7 +45,7 @@ public class Main {
 				String apellido = scanner.nextLine();
 				System.out.println("Ingrese fecha de nacimiento del jugador");
 				LocalDate fechaNacimineto = LocalDate.parse(scanner.nextLine(),formatoFecha);
-				System.out.println("Ingrese nacionalidad del jugador");
+				System.out.println("Ingrese Pais del jugador");
 				String nacionalidad = scanner.nextLine();
 				System.out.println("Ingrese estatura del jugador (utilize ',')");
 				float estatura = scanner.nextFloat();
@@ -119,16 +119,21 @@ public class Main {
 				for(Iterator<Jugador> iterador =jugadores.iterator();iterador.hasNext();) {
 					Jugador jugador=iterador.next();						
 					if(jugador.getNombre().equalsIgnoreCase(nombreBorrar) && jugador.getApellido().equalsIgnoreCase(apellidoBorrar)) {
-							iterador.remove();
-							System.out.println("El jugador ha sido borrado del array");
+						iterador.remove();
+						System.out.println("El jugador ha sido borrado del array");
+						jugadorEncontrado=true;
 						}
+						break;	
 				}
 				if(!jugadorEncontrado) {
-					System.out.println("No se encontro al jugador");
-					System.out.println("------------------------------------------------");
-				}						
-				break;	
+					System.out.println("No se encontro el jugador");
+					System.out.println("-------------------------");
 				}
+				break;	
+			}	
+										
+					
+			
 			case 6:{
 				System.out.println("Hay "+jugadores.size()+" jugadores ingresados");
 				System.out.println("------------------------------------------------");
